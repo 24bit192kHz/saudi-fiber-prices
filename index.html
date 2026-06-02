@@ -9,128 +9,127 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --bg:#0d1117;--surface:#161b22;--surface2:#1c2128;--border:#30363d;
-  --text:#c9d1d9;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950;--yellow:#d29922;--red:#f85149;
-  --purple:#bc8cff;--cyan:#39d2c0;--orange:#f0883e;
+  --text:#c9d1d9;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950;--yellow:#d29922;
+  --purple:#bc8cff;--mobily:#58a6ff;--zain:#3fb950;--salam:#56d364;--go:#39d2c0;
 }
 body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
-.header{background:var(--surface);padding:20px 20px 16px;border-bottom:1px solid var(--border)}
-.header-inner{max-width:1200px;margin:0 auto}
-.header h1{font-size:1.4em;font-weight:700;color:var(--accent)}
-.header p{color:var(--muted);margin-top:3px;font-size:0.8em}
-.badge-live{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.65em;font-weight:600;margin-top:6px;background:rgba(63,185,80,0.12);color:var(--green);border:1px solid rgba(63,185,80,0.25)}
-.stats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px 16px;background:var(--surface);border-bottom:1px solid var(--border)}
-.stat-item{text-align:center;padding:5px 12px;background:var(--surface2);border-radius:6px;border:1px solid var(--border)}
-.stat-item .num{font-size:1.15em;font-weight:800;color:var(--accent)}
-.stat-item .label{font-size:0.6em;color:var(--muted);margin-top:1px}
-.controls{max-width:1200px;margin:0 auto;padding:14px 20px 6px}
-.ctrl-row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:8px}
-.ptogs{display:flex;flex-wrap:wrap;gap:4px}
-.ptog{padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);cursor:pointer;font-size:0.74em;font-weight:600;transition:.15s}
-.ptog:hover{border-color:var(--muted)}
-.ptog.active{color:var(--bg);border-color:transparent}
-.ptog.all.active{background:var(--accent)}
-.ptog.stc.active{background:var(--purple)}
-.ptog.mobily.active{background:var(--green)}
-.ptog.zain.active{background:var(--red)}
-.ptog.salam.active{background:var(--cyan)}
-.ptog.go.active{background:var(--orange)}
-.sgrp{display:flex;flex-direction:column;gap:2px;min-width:160px}
-.sgrp label{font-size:0.65em;color:var(--muted);font-weight:600}
-.sgrp .rv{font-size:0.76em;color:var(--accent);font-weight:700}
+.hd{background:var(--surface);padding:18px 20px 14px;border-bottom:1px solid var(--border)}
+.hd-i{max-width:1200px;margin:0 auto}
+.hd h1{font-size:1.35em;font-weight:700;color:var(--accent)}
+.hd p{color:var(--muted);margin-top:2px;font-size:0.78em}
+.stats{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border)}
+.sti{text-align:center;padding:4px 12px;background:var(--surface2);border-radius:6px;border:1px solid var(--border)}
+.sti .n{font-size:1.1em;font-weight:800;color:var(--accent)}
+.sti .l{font-size:0.58em;color:var(--muted)}
+.ctrls{max-width:1200px;margin:0 auto;padding:12px 20px 4px}
+.cr{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin-bottom:6px}
+.ptg-b{display:flex;flex-wrap:wrap;gap:4px}
+.ptg{padding:3px 10px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);cursor:pointer;font-size:0.72em;font-weight:600;transition:.15s}
+.ptg:hover{border-color:var(--muted)}
+.ptg.active{border-color:transparent}
+.ptg.all.active{background:var(--accent);color:var(--bg)}
+.ptg.stc.active{background:var(--purple);color:var(--bg)}
+.ptg.mobily.active{background:var(--mobily);color:var(--bg)}
+.ptg.zain.active{background:var(--zain);color:var(--bg)}
+.ptg.salam.active{background:var(--salam);color:var(--bg)}
+.ptg.go.active{background:var(--go);color:var(--bg)}
+.sg{display:flex;flex-direction:column;gap:2px;min-width:155px}
+.sg label{font-size:0.62em;color:var(--muted);font-weight:600}
+.sg .rv{font-size:0.74em;color:var(--accent);font-weight:700}
 input[type=range]{-webkit-appearance:none;width:100%;height:4px;border-radius:2px;background:var(--surface2);outline:none}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg)}
-.sbtns{display:flex;gap:3px;flex-wrap:wrap}
-.sb{padding:4px 9px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);cursor:pointer;font-size:0.7em;font-weight:600;transition:.15s}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg)}
+.sb-b{display:flex;gap:3px;flex-wrap:wrap}
+.sb{padding:3px 8px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);cursor:pointer;font-size:0.68em;font-weight:600;transition:.15s}
 .sb.active{background:var(--accent);color:var(--bg);border-color:var(--accent)}
 .sb:hover{color:var(--text)}
-.sbx{flex:1;min-width:160px}
-.sbx input{width:100%;padding:5px 10px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:0.8em;outline:none}
+.sbx{flex:1;min-width:150px}
+.sbx input{width:100%;padding:4px 8px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:0.78em;outline:none}
 .sbx input:focus{border-color:var(--accent)}
-.rc{font-size:0.7em;color:var(--muted);padding:2px 0;margin-right:auto}
-.table-wrap{max-width:1200px;margin:0 auto;padding:0 20px 20px;overflow-x:auto}
-table{width:100%;border-collapse:separate;border-spacing:0 1px;min-width:700px}
-thead th{padding:6px 8px;text-align:right;font-size:0.62em;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+.rc{font-size:0.68em;color:var(--muted);padding:2px 0;margin-right:auto}
+.tw{max-width:1200px;margin:0 auto;padding:0 20px 16px;overflow-x:auto}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:680px}
+thead th{padding:6px 8px;text-align:center;font-size:0.6em;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+thead th:first-child,thead th:nth-child(2),thead th:nth-child(3){text-align:right}
 thead th.sorted{color:var(--accent)}
 thead th .ar{display:inline-block;margin-right:2px;font-size:0.8em;opacity:0.2}
 thead th.sorted .ar{opacity:1}
-tbody tr:hover{background:rgba(88,166,255,0.04)}
-tbody td{padding:8px;font-size:0.82em;border-bottom:1px solid rgba(48,54,61,0.4);vertical-align:middle}
-.rk{width:24px;text-align:center;font-weight:800;font-size:0.72em;color:var(--muted);opacity:0.4}
+tbody tr:hover{background:rgba(88,166,255,0.03)}
+tbody td{padding:7px 8px;font-size:0.8em;border-bottom:1px solid rgba(48,54,61,0.3);vertical-align:middle;text-align:center}
+tbody td:first-child,tbody td:nth-child(2),tbody td:nth-child(3){text-align:right}
+.rk{width:22px;font-weight:800;font-size:0.7em;color:var(--muted);opacity:0.35}
 .rk.g1{color:var(--yellow);opacity:1}
-.rk.g2{color:var(--muted);opacity:0.8}
-.rk.g3{color:var(--orange);opacity:0.7}
-.pc{font-weight:700;font-size:0.86em;white-space:nowrap}
-.pc.stc{color:var(--purple)}.pc.mobily{color:var(--green)}.pc.zain{color:var(--red)}.pc.salam{color:var(--cyan)}.pc.go{color:var(--orange)}
-.spd{white-space:nowrap;font-weight:700;font-size:0.9em}
+.rk.g2{opacity:0.7}
+.rk.g3{color:var(--salam);opacity:0.6}
+.pc{font-weight:700;font-size:0.84em;white-space:nowrap}
+.pc.stc{color:var(--purple)}.pc.mobily{color:var(--mobily)}.pc.zain{color:var(--zain)}.pc.salam{color:var(--salam)}.pc.go{color:var(--go)}
+.spd{white-space:nowrap;font-weight:700;font-size:0.88em}
 .spd .dn{color:var(--green)}
-.spd .up{color:var(--muted);font-size:0.88em;opacity:0.7}
-.prc{text-align:left;white-space:nowrap}
-.prc .mn{font-weight:800;color:var(--green);font-size:0.92em}
-.prc .pp{display:inline-block;background:rgba(240,136,62,0.12);color:var(--orange);padding:1px 5px;border-radius:3px;font-size:0.95em;font-weight:700}
-.prc .pm{font-size:0.66em;color:var(--green);font-weight:600;margin-top:1px}
+.spd .up{color:var(--muted);font-size:0.9em}
+.prc{white-space:nowrap;text-align:center}
+.prc .mn{font-weight:800;color:var(--green);font-size:0.9em}
+.prc .pp{display:inline-block;background:rgba(86,211,100,0.1);color:var(--salam);padding:1px 5px;border-radius:3px;font-size:0.9em;font-weight:700}
+.prc .pm{font-size:0.64em;color:var(--green);font-weight:600;margin-top:1px}
 .prc .pl{font-size:0.64em;color:var(--muted);margin-top:1px}
-.prc .eff{font-size:0.64em;color:var(--muted);margin-top:1px}
-.prc .eff .yp{color:var(--yellow);font-weight:600}
-.ttl{text-align:left;white-space:nowrap;opacity:0.5}
-tr:hover .ttl{opacity:0.9}
-.ttl .tp{font-weight:700;color:var(--yellow);font-size:0.82em}
-.nt{font-size:0.68em;color:var(--muted);max-width:160px;opacity:0.45}
-tr:hover .nt{opacity:0.75}
-.la{color:var(--accent);text-decoration:none;font-size:0.7em;padding:3px 7px;border:1px solid var(--accent);border-radius:4px;transition:.15s;white-space:nowrap;display:inline-block;opacity:0.55}
-.la:hover{opacity:1;background:var(--accent);color:var(--bg)}
-tr:hover .la{opacity:0.85}
-.empty{text-align:center;padding:40px;color:var(--muted);opacity:0.4}
-.fab{position:fixed;bottom:14px;left:14px;z-index:100}
-.fab button{padding:7px 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;font-size:0.72em;font-weight:600;transition:.15s}
+.prc .eff{font-size:0.62em;color:var(--yellow);margin-top:1px;font-weight:600}
+.ttl{white-space:nowrap;opacity:0.45}
+tr:hover .ttl{opacity:0.85}
+.ttl .tp{font-weight:700;color:var(--yellow);font-size:0.8em}
+.nt{font-size:0.66em;color:var(--muted);max-width:150px;opacity:0.4}
+tr:hover .nt{opacity:0.7}
+.lk{color:var(--accent);text-decoration:none;font-size:0.68em;padding:2px 6px;border:1px solid var(--accent);border-radius:4px;transition:.15s;white-space:nowrap;display:inline-block;opacity:0.5}
+.lk:hover{opacity:1;background:var(--accent);color:var(--bg)}
+tr:hover .lk{opacity:0.8}
+.emp{text-align:center;padding:36px;color:var(--muted);opacity:0.35;font-size:0.85em}
+.fab{position:fixed;bottom:12px;left:12px;z-index:100}
+.fab button{padding:6px 10px;border-radius:5px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;font-size:0.7em;font-weight:600;transition:.15s}
 .fab button:hover{color:var(--text);background:var(--surface2)}
 .ov{display:none;position:fixed;inset:0;background:rgba(13,17,23,0.7);backdrop-filter:blur(3px);z-index:200;justify-content:center;align-items:center}
 .ov.open{display:flex}
-.md{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;max-width:480px;width:92%;max-height:80vh;overflow-y:auto}
-.md h2{font-size:1em;margin-bottom:10px}
+.md{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:18px;max-width:460px;width:92%;max-height:80vh;overflow-y:auto}
+.md h2{font-size:0.95em;margin-bottom:8px}
 .md .x{float:left;background:none;border:none;color:var(--muted);font-size:1.1em;cursor:pointer;opacity:0.5}
 .md .x:hover{opacity:1;color:var(--text)}
-.le{padding:8px 0;border-bottom:1px solid var(--border)}
+.le{padding:7px 0;border-bottom:1px solid var(--border)}
 .le:last-child{border-bottom:none}
-.ld{font-size:0.65em;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:4px}
-.ld .dot{width:5px;height:5px;border-radius:50%;display:inline-block}
-.ld .dot.err{background:var(--red)}.ld .dot.chg{background:var(--green)}.ld .dot.ok{background:var(--surface2)}
-.lb{font-size:0.78em;line-height:1.5;opacity:0.8}
-@media(max-width:600px){.header h1{font-size:1.1em}.ctrl-row{gap:5px}.sgrp{min-width:110px}.table-wrap{padding:0 6px 12px}}
+.ld{font-size:0.62em;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:4px}
+.ld .dt{width:5px;height:5px;border-radius:50%;display:inline-block}
+.ld .dt.e{background:red}.ld .dt.c{background:green}.ld .dt.o{background:var(--surface2)}
+.lb{font-size:0.74em;line-height:1.5;opacity:0.75}
+@media(max-width:600px){.hd h1{font-size:1.05em}.cr{gap:5px}.sg{min-width:110px}.tw{padding:0 6px 12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-inner">
+<div class="hd"><div class="hd-i">
   <h1>مقارنة اسعار الفايبر السعودية</h1>
   <p>جميع الباقات الرسمية — مرتبة حسب السعر الفعلي للعقد</p>
-  <span class="badge-live" id="badge">تحديث مباشر</span>
 </div></div>
 
 <div class="stats">
-  <div class="stat-item"><div class="num">29</div><div class="label">باقة</div></div>
-  <div class="stat-item"><div class="num">5</div><div class="label">مزود</div></div>
-  <div class="stat-item"><div class="num">189</div><div class="label">ارخص/شهر</div></div>
-  <div class="stat-item"><div class="num">3</div><div class="label">عرض ترويجي</div></div>
+  <div class="sti"><div class="n">29</div><div class="l">باقة</div></div>
+  <div class="sti"><div class="n">5</div><div class="l">مزود</div></div>
+  <div class="sti"><div class="n">189</div><div class="l">ارخص/شهر</div></div>
+  <div class="sti"><div class="n">3</div><div class="l">عرض ترويجي</div></div>
 </div>
 
-<div class="controls">
-  <div class="ctrl-row">
-    <div class="ptogs">
-      <button class="ptog all active" data-p="all">الكل</button>
-      <button class="ptog stc" data-p="STC">STC</button>
-      <button class="ptog mobily" data-p="Mobily">Mobily</button>
-      <button class="ptog zain" data-p="Zain">Zain</button>
-      <button class="ptog salam" data-p="Salam">Salam</button>
-      <button class="ptog go" data-p="Go">Go</button>
+<div class="ctrls">
+  <div class="cr">
+    <div class="ptg-b">
+      <button class="ptg all active" data-p="all">الكل</button>
+      <button class="ptg stc" data-p="STC">STC</button>
+      <button class="ptg mobily" data-p="Mobily">Mobily</button>
+      <button class="ptg zain" data-p="Zain">Zain</button>
+      <button class="ptg salam" data-p="Salam">Salam</button>
+      <button class="ptg go" data-p="Go">Go</button>
     </div>
     <div class="sbx"><input type="text" id="srch" placeholder="بحث..."></div>
   </div>
-  <div class="ctrl-row">
-    <div class="sgrp"><label>السعر حتى: <span class="rv" id="pv">1000</span> ريال</label><input type="range" id="pmax" min="0" max="1000" value="1000" step="10"></div>
-    <div class="sgrp"><label>التحميل من: <span class="rv" id="dv">0</span> ميجا</label><input type="range" id="dmin" min="0" max="1000" value="0" step="25"></div>
-    <div class="sgrp"><label>الرفع من: <span class="rv" id="uv">0</span> ميجا</label><input type="range" id="umin" min="0" max="300" value="0" step="25"></div>
+  <div class="cr">
+    <div class="sg"><label>السعر حتى: <span class="rv" id="pv">1000</span> ريال</label><input type="range" id="pmax" min="0" max="1000" value="1000" step="10"></div>
+    <div class="sg"><label>التحميل من: <span class="rv" id="dv">0</span></label><input type="range" id="dmin" min="0" max="1000" value="0" step="25"></div>
+    <div class="sg"><label>الرفع من: <span class="rv" id="uv">0</span></label><input type="range" id="umin" min="0" max="300" value="0" step="25"></div>
   </div>
-  <div class="ctrl-row">
-    <div class="sbtns">
+  <div class="cr">
+    <div class="sb-b">
       <button class="sb active" data-k="eff" data-d="asc">الفعلي ↑</button>
       <button class="sb" data-k="eff" data-d="desc">الفعلي ↓</button>
       <button class="sb" data-k="price" data-d="asc">الشهري ↑</button>
@@ -142,25 +141,25 @@ tr:hover .la{opacity:0.85}
   </div>
 </div>
 
-<div class="table-wrap">
+<div class="tw">
 <table>
 <thead><tr>
-  <th style="width:24px">#</th>
+  <th>#</th>
   <th data-k="prov">المزود <span class="ar">&#x21C5;</span></th>
   <th data-k="name">الباقة <span class="ar">&#x21C5;</span></th>
   <th data-k="down" class="sorted">السرعة &#x2193; <span class="ar">&#x2193;</span></th>
   <th data-k="price">شهرياً <span class="ar">&#x21C5;</span></th>
-  <th data-k="eff" class="sorted">الفعلي/شهر <span class="ar">&#x2191;</span></th>
-  <th data-k="total">مجموع ١٢ شهر <span class="ar">&#x21C5;</span></th>
+  <th data-k="eff" class="sorted">الفعلي <span class="ar">&#x2191;</span></th>
+  <th data-k="total">المجموع <span class="ar">&#x21C5;</span></th>
   <th data-k="promo">التفاصيل</th>
-  <th style="width:50px"></th>
+  <th></th>
 </tr></thead>
 <tbody id="tb"></tbody>
 </table>
-<div class="empty" id="emp" style="display:none"><p>لا توجد نتائج</p></div>
+<div class="emp" id="emp" style="display:none"><p>لا توجد نتائج</p></div>
 </div>
 
-<div class="fab"><button onclick="openLog()">&#x270E; سجل التحديثات</button></div>
+<div class="fab"><button onclick="openLog()">&#x270E;</button></div>
 <div class="ov" id="lov" onclick="closeLog(event)">
   <div class="md" onclick="event.stopPropagation()">
     <button class="x" onclick="closeLog()">&#x2715;</button>
@@ -171,48 +170,48 @@ tr:hover .la{opacity:0.85}
 
 <script>
 const P=[
-  {p:"Go",n:"فايبر 100",d:100,u:25,pr:189,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_100_D_N"},
-  {p:"Go",n:"فايبر 200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_200_D_N"},
-  {p:"Go",n:"فايبر 300",d:300,u:75,pr:230,po:null,pm:null,na:null,pro:"عرض ترويجي - عقد ١٢ شهر",l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST300_12M"},
-  {p:"Go",n:"فايبر 500",d:500,u:125,pr:389,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_500_API_D"},
-  {p:"Zain",n:"Fiber Home Basic",d:100,u:25,pr:199,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Fiber Home",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Fiber Home Plus",d:300,u:100,pr:289,po:null,pm:null,na:null,pro:"حصري اونلاين فقط",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Fiber Home Gaming",d:300,u:100,pr:299,po:null,pm:null,na:null,pro:"حصري اونلاين + قسيمة ٥٠ ريال شهريا",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Fiber Home Premium",d:500,u:200,pr:399,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Fiber Home Black",d:1000,u:300,pr:999,po:null,pm:null,na:null,pro:"حصري اونلاين + Netflix, Disney+, Shahid, OSN",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Mobily",n:"Fiber 200",d:200,u:50,pr:230,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-200"},
-  {p:"Mobily",n:"Fiber 300",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300"},
-  {p:"Mobily",n:"Fiber 400",d:400,u:150,pr:345,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-400"},
-  {p:"Mobily",n:"Fiber 500",d:500,u:200,pr:402.5,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-500"},
-  {p:"Mobily",n:"Gamers 500",d:500,u:200,pr:402.5,po:null,pm:null,na:null,pro:"خصم ٦٩٠ ريال على اجهزة الالعاب",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-gamers"},
-  {p:"Mobily",n:"FTTR 400",d:400,u:150,pr:402.5,po:null,pm:null,na:null,pro:"راوتر شبكي لجميع الغرف",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr400"},
-  {p:"Mobily",n:"FTTR 500",d:500,u:200,pr:460,po:null,pm:null,na:null,pro:"راوتر شبكي لجميع الغرف",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr500"},
-  {p:"Mobily",n:"Fiber 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-1gb"},
-  {p:"Mobily",n:"FTTR 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pro:"راوتر شبكي لجميع الغرف",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr1gbps"},
-  {p:"STC",n:"بيتي فايبر بيسك",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"Go",n:"100",d:100,u:25,pr:189,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_100_D_N"},
+  {p:"Go",n:"200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_200_D_N"},
+  {p:"Go",n:"300",d:300,u:75,pr:230,po:null,pm:null,na:null,pr2:"12 شهر",l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST300_12M"},
+  {p:"Go",n:"500",d:500,u:125,pr:389,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_500_API_D"},
+  {p:"Zain",n:"Basic 100",d:100,u:25,pr:199,po:null,pm:null,na:null,pr2:"+١١٥ تأسيس",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Zain",n:"Home 200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Zain",n:"Plus 300",d:300,u:100,pr:289,po:null,pm:null,na:null,pr2:"اونلاين",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Zain",n:"Gaming 300",d:300,u:100,pr:299,po:null,pm:null,na:null,pr2:"اونلاين + ٥٠ قسيمة",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Zain",n:"Premium 500",d:500,u:200,pr:399,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Zain",n:"Black 1G",d:1000,u:300,pr:999,po:null,pm:null,na:null,pr2:"اونلاين + Netflix, Disney+, Shahid, OSN",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  {p:"Mobily",n:"200",d:200,u:50,pr:230,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-200"},
+  {p:"Mobily",n:"300",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300"},
+  {p:"Mobily",n:"400",d:400,u:150,pr:345,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-400"},
+  {p:"Mobily",n:"500",d:500,u:200,pr:402.5,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-500"},
+  {p:"Mobily",n:"Gamers 500",d:500,u:200,pr:402.5,po:null,pm:null,na:null,pr2:"خصم ٦٩٠ على اجهزة",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-gamers"},
+  {p:"Mobily",n:"FTTR 400",d:400,u:150,pr:402.5,po:null,pm:null,na:null,pr2:"راوتر شبكي",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr400"},
+  {p:"Mobily",n:"FTTR 500",d:500,u:200,pr:460,po:null,pm:null,na:null,pr2:"راوتر شبكي",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr500"},
+  {p:"Mobily",n:"1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-1gb"},
+  {p:"Mobily",n:"FTTR 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pr2:"راوتر شبكي",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr1gbps"},
+  {p:"STC",n:"بيسك 300",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
   {p:"STC",n:"ستريم لايت 500",d:500,u:125,pr:345,po:null,pm:null,na:null,l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"ستريم 500",d:500,u:125,pr:402.5,po:null,pm:null,na:null,pro:"stc TV + اشتراك واحد (Netflix او Disney+ او Shahid او OSN)",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"بيسك برو 300",d:300,u:100,pr:460,po:null,pm:null,na:null,pro:"stc TV مجاني",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"انترتينمنت 500",d:500,u:200,pr:460,po:null,pm:null,na:null,pro:"stc TV + اشتراكين (Netflix, Disney+, Shahid, OSN)",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"ستريم برو 500",d:500,u:125,pr:575,po:null,pm:null,na:null,pro:"stc TV + اشتراك واحد",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"انترتينمنت برو 500",d:500,u:200,pr:690,po:null,pm:null,na:null,pro:"stc TV + اشتراكين",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"STC",n:"ماكس 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pro:"stc TV + ٤ اشتراكات (Netflix, Disney+, Shahid, OSN)",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
-  {p:"Salam",n:"فايبر 300",d:300,u:100,pr:290,po:174,pm:3,na:290,pro:"خصم ٤٠٪ اول ٣ شهور",l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
-  {p:"Salam",n:"فايبر 500",d:500,u:125,pr:360,po:216,pm:3,na:360,pro:"خصم ٤٠٪ اول ٣ شهور",l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
-  {p:"Salam",n:"فايبر 1000",d:1000,u:300,pr:1000,po:300,pm:2,na:1000,pro:"خصم ٧٠٪ اول شهرين",l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
+  {p:"STC",n:"ستريم 500",d:500,u:125,pr:402.5,po:null,pm:null,na:null,pr2:"stc TV + ١ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"STC",n:"بيسك برو 300",d:300,u:100,pr:460,po:null,pm:null,na:null,pr2:"stc TV",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"STC",n:"انترتينمنت 500",d:500,u:200,pr:460,po:null,pm:null,na:null,pr2:"stc TV + ٢ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"STC",n:"ستريم برو 500",d:500,u:125,pr:575,po:null,pm:null,na:null,pr2:"stc TV + ١ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"STC",n:"انترتينمنت برو 500",d:500,u:200,pr:690,po:null,pm:null,na:null,pr2:"stc TV + ٢ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"STC",n:"ماكس 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pr2:"stc TV + ٤ اشتراكات",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  {p:"Salam",n:"300",d:300,u:100,pr:290,po:174,pm:3,na:290,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
+  {p:"Salam",n:"500",d:500,u:125,pr:360,po:216,pm:3,na:360,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
+  {p:"Salam",n:"1000",d:1000,u:300,pr:1000,po:300,pm:2,na:1000,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
 ];
 P.forEach(o=>{o._e=(o.po&&o.pm&&o.na!=null)?(o.po*o.pm+o.na*(12-o.pm))/12:o.pr;o._t=o._e*12});
 
 const LOG=[
-  {d:"٣٠ مايو ٢٠٢٦",s:"err",e:["فشل الفحص - خطا API"]},
-  {d:"٢٩ مايو ٢٠٢٦",s:"ok",e:["لا تغيير"]},
-  {d:"٢٨ مايو ٢٠٢٦",s:"ok",e:["لا تغيير"]},
-  {d:"٢٧ مايو ٢٠٢٦",s:"chg",e:["اول فحص"]},
+  {d:"٣٠ مايو",s:"e",e:["فشل - خطا API"]},
+  {d:"٢٩ مايو",s:"o",e:["لا تغيير"]},
+  {d:"٢٨ مايو",s:"o",e:["لا تغيير"]},
+  {d:"٢٧ مايو",s:"c",e:["اول فحص"]},
 ];
 
-const S=JSON.parse(localStorage.getItem('sfp')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,sk:'eff',sd:'asc'};
-function save(){localStorage.setItem('sfp',JSON.stringify(S))}
+const S=JSON.parse(localStorage.getItem('sfp3')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,sk:'eff',sd:'asc'};
+function save(){localStorage.setItem('sfp3',JSON.stringify(S))}
 
 function filt(){return P.filter(o=>{
   if(S.pv!='all'&&o.p!==S.pv)return false;
@@ -224,7 +223,7 @@ function filt(){return P.filter(o=>{
 });}
 function srt(a){a.sort((x,y)=>{
   let vx,vy;
-  switch(S.sk){case'eff':vx=x._e;vy=y._e;break;case'price':vx=x.pr;vy=y.pr;break;case'total':vx=x._t;vy=y._t;break;case'down':vx=x.d;vy=y.d;break;case'up':vx=x.u;vy=y.u;break;case'prov':vx=x.p;vy=y.p;break;case'promo':vx=x.pro?1:0;vy=y.pro?1:0;break;case'name':vx=x.n;vy=y.n;break;default:vx=x._e;vy=y._e;}
+  switch(S.sk){case'eff':vx=x._e;vy=y._e;break;case'price':vx=x.pr;vy=y.pr;break;case'total':vx=x._t;vy=y._t;break;case'down':vx=x.d;vy=y.d;break;case'up':vx=x.u;vy=y.u;break;case'prov':vx=x.p;vy=y.p;break;case'promo':vx=x.pr2?1:0;vy=y.pr2?1:0;break;case'name':vx=x.n;vy=y.n;break;default:vx=x._e;vy=y._e;}
   if(typeof vx==='string')return S.sd==='asc'?vx.localeCompare(vy):vy.localeCompare(vx);
   return S.sd==='asc'?vx-vy:vy-vx;
 });return a;}
@@ -236,29 +235,29 @@ function render(){
   const data=srt(filt());
   const tb=document.getElementById('tb');
   document.getElementById('emp').style.display=data.length?'none':'block';
-  document.getElementById('rc').textContent=data.length+' من '+P.length+' باقة';
+  document.getElementById('rc').textContent=data.length+' / '+P.length;
   tb.innerHTML=data.map((o,i)=>{
     const rk=i===0?'g1':i===1?'g2':i===2?'g3':'';
     const hp=o.po!=null;
-    let priceHtml;
+    let ph;
     if(hp){
-      priceHtml=`<div class="pp">${fp(o.pr)}</div>
-        <div class="pm">${fp(o.po)} ريال x ${o.pm} شهور</div>
-        <div class="pl">ثم ${fp(o.na)} ريال/شهر</div>`;
+      ph=`<div class="pp">${fp(o.pr)}</div>
+        <div class="pm">${fp(o.po)} x ${o.pm} شهور</div>
+        <div class="pl">ثم ${fp(o.na)}/شهر</div>`;
     }else{
-      priceHtml=`<div class="mn">${fp(o.pr)}</div>`;
+      ph=`<div class="mn">${fp(o.pr)}</div>`;
     }
-    const promoHtml=o.pro?`<span class="pp">${o.pro}</span>`:'';
+    const nt=o.pr2?`<span class="pp">${o.pr2}</span>`:'';
     return `<tr>
       <td class="rk ${rk}">${i+1}</td>
       <td><span class="pc ${o.p.toLowerCase()}">${o.p}</span></td>
-      <td style="font-size:0.8em">${o.n}</td>
+      <td>${o.n}</td>
       <td class="spd"><span class="dn">${fs(o.d)}</span>/<span class="up">${fs(o.u)}</span></td>
-      <td class="prc">${priceHtml}</td>
-      <td class="prc"><div class="mn">${fp(o._e)}</div>${hp?`<div class="eff">فعلي <span class="yp">${fp(o._e)}</span>/شهر</div>`:''}</td>
+      <td class="prc">${ph}</td>
+      <td class="prc"><div class="mn">${fp(o._e)}</div>${hp?`<div class="eff">${fp(o._e)}/شهر</div>`:''}</td>
       <td class="ttl"><span class="tp">${fp(o._t)}</span></td>
-      <td class="nt">${promoHtml}</td>
-      <td><a class="la" href="${o.l}" target="_blank">&#x2197;</a></td>
+      <td class="nt">${nt}</td>
+      <td><a class="lk" href="${o.l}" target="_blank">&#x2197;</a></td>
     </tr>`;
   }).join('');
   updSort();
@@ -269,8 +268,8 @@ function updSort(){
   if(th){th.classList.add('sorted');th.querySelector('.ar').textContent=S.sd==='asc'?'\u2191':'\u2193';th.querySelector('.ar').style.opacity='1'}
 }
 
-document.querySelectorAll('.ptog').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.ptog').forEach(x=>x.classList.remove('active'));b.classList.add('active');S.pv=b.dataset.p;save();render();
+document.querySelectorAll('.ptg').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.ptg').forEach(x=>x.classList.remove('active'));b.classList.add('active');S.pv=b.dataset.p;save();render();
 }));
 document.getElementById('srch').value=S.sr;
 document.getElementById('srch').addEventListener('input',e=>{S.sr=e.target.value;save();render()});
@@ -289,11 +288,10 @@ document.querySelectorAll('thead th[data-k]').forEach(th=>th.addEventListener('c
   document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===k&&b.dataset.d===S.sd));
   save();render();
 }));
-
 function openLog(){
   document.getElementById('lentries').innerHTML=LOG.map(l=>{
-    const dc=l.s==='err'?'err':l.s==='chg'?'chg':'ok';
-    return `<div class="le"><div class="ld"><span class="dot ${dc}"></span>${l.d}</div><div class="lb">${l.e.map(x=>'&bull; '+x).join('<br>')}</div></div>`;
+    const dc=l.s==='e'?'e':l.s==='c'?'c':'o';
+    return `<div class="le"><div class="ld"><span class="dt ${dc}"></span>${l.d}</div><div class="lb">${l.e.map(x=>'&bull; '+x).join('<br>')}</div></div>`;
   }).join('');
   document.getElementById('lov').classList.add('open');
 }
@@ -301,15 +299,13 @@ function closeLog(e){
   if(!e||e.target===document.getElementById('lov')||e.target.classList.contains('x'))document.getElementById('lov').classList.remove('open');
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLog()});
-
 (()=>{
-  document.querySelectorAll('.ptog').forEach(b=>b.classList.toggle('active',b.dataset.p===S.pv));
+  document.querySelectorAll('.ptg').forEach(b=>b.classList.toggle('active',b.dataset.p===S.pv));
   document.getElementById('srch').value=S.sr;
   document.getElementById('pmax').value=S.pmax;document.getElementById('pv').textContent=S.pmax;
   document.getElementById('dmin').value=S.dmin;document.getElementById('dv').textContent=S.dmin;
   document.getElementById('umin').value=S.umin;document.getElementById('uv').textContent=S.umin;
   document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===S.sk&&b.dataset.d===S.sd));
-  document.getElementById('badge').textContent=new Date().toLocaleDateString('ar-SA',{timeZone:'Asia/Riyadh',year:'numeric',month:'short',day:'numeric'});
   render();
 })();
 </script>
