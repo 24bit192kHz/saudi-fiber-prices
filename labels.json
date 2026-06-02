@@ -1,0 +1,23 @@
+{
+  "stc_300_100": {"tv": "stc TV مجاني"},
+  "stc_500_125": {"tv": "stc TV Classic مجاني"},
+  "stc_500_125s": {"tv": "stc TV", "subs": "اشتراك (Netflix / Disney+ / Shahid / OSN)"},
+  "stc_300_100p": {"tv": "stc TV مجاني"},
+  "stc_500_200": {"tv": "stc TV", "subs": "اشتراكين (Netflix / Disney+ / Shahid / OSN)"},
+  "stc_500_125sp": {"tv": "stc TV", "subs": "اشتراك (Netflix / Disney+ / Shahid / OSN)"},
+  "stc_500_200p": {"tv": "stc TV", "subs": "اشتراكين (Netflix / Disney+ / Shahid / OSN)"},
+  "stc_1000_300": {"tv": "stc TV", "subs": "٤ اشتراكات (Netflix / Disney+ / Shahid / OSN)"},
+  "go_300_75": {"promo": "عقد ١٢ شهر"},
+  "zain_100_25": {"fees": "+١١٥ رسوم تأسيس"},
+  "zain_200_50": {"router": "راوتر مجاني", "wifi_extender": "مكرر واي فاي", "subs": "اشتراك واحد"},
+  "zain_300_100": {"promo": "حصري اونلاين", "router": "راوتر", "wifi_extender": "٢ مكرر واي فاي", "subs": "٢ اشتراك"},
+  "zain_500_200": {"promo": "حصري اونلاين", "router": "راوتر", "wifi_extender": "٢ مكرر واي فاي", "subs": "٢ اشتراك"},
+  "zain_1000_300": {"promo": "حصري اونلاين", "router": "راوتر", "wifi_extender": "٢ مكرر واي فاي", "subs": "٤ اشتراكات"},
+  "mobily_gamers_500_200": {"gaming": "خصم ٦٩٠ على اجهزة الالعاب", "router": "راوتر مجاني", "wifi_extender": "٣ مكررات واي فاي", "tv": "Mobily TV مجاني", "install": "free"},
+  "mobily_fttr_400_150": {"fttr": "راوتر شبكي داخلي لجميع الغرف"},
+  "mobily_fttr_500_200": {"fttr": "راوتر شبكي داخلي لجميع الغرف"},
+  "mobily_fttr_1000_300": {"fttr": "راوتر شبكي داخلي لجميع الغرف"},
+  "salam_300_100": {"promo": "خصم ٤٠٪ اول ٣ شهور", "subs": "اشتراك واحد"},
+  "salam_500_125": {"promo": "خصم ٤٠٪ اول ٣ شهور", "subs": "٢ اشتراكين"},
+  "salam_1000_300": {"promo": "خصم ٧٠٪ اول شهرين", "subs": "٣ اشتراكات"}
+}
