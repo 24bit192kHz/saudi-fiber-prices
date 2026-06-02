@@ -10,13 +10,13 @@
 :root{
   --bg:#0d1117;--surface:#161b22;--surface2:#1c2128;--border:#30363d;
   --text:#c9d1d9;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950;--yellow:#d29922;
-  --purple:#bc8cff;--mobily:#58a6ff;--zain:#3fb950;--salam:#56d364;--go:#39d2c0;
+  --purple:#bc8cff;--c-mobily:#58a6ff;--c-zain:#3fb950;--c-salam:#56d364;--c-go:#39d2c0;
 }
 body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 .hd{background:var(--surface);padding:18px 20px 14px;border-bottom:1px solid var(--border)}
 .hd-i{max-width:1200px;margin:0 auto}
 .hd h1{font-size:1.35em;font-weight:700;color:var(--accent)}
-.hd p{color:var(--muted);margin-top:2px;font-size:0.78em}
+.hd p{color:var(--muted);margin-top:2px;font-size:0.78em;opacity:0.7}
 .stats{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border)}
 .sti{text-align:center;padding:4px 12px;background:var(--surface2);border-radius:6px;border:1px solid var(--border)}
 .sti .n{font-size:1.1em;font-weight:800;color:var(--accent)}
@@ -29,10 +29,10 @@ body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:v
 .ptg.active{border-color:transparent}
 .ptg.all.active{background:var(--accent);color:var(--bg)}
 .ptg.stc.active{background:var(--purple);color:var(--bg)}
-.ptg.mobily.active{background:var(--mobily);color:var(--bg)}
-.ptg.zain.active{background:var(--zain);color:var(--bg)}
-.ptg.salam.active{background:var(--salam);color:var(--bg)}
-.ptg.go.active{background:var(--go);color:var(--bg)}
+.ptg.mobily.active{background:var(--c-mobily);color:var(--bg)}
+.ptg.zain.active{background:var(--c-zain);color:var(--bg)}
+.ptg.salam.active{background:var(--c-salam);color:var(--bg)}
+.ptg.go.active{background:var(--c-go);color:var(--bg)}
 .sg{display:flex;flex-direction:column;gap:2px;min-width:155px}
 .sg label{font-size:0.62em;color:var(--muted);font-weight:600}
 .sg .rv{font-size:0.74em;color:var(--accent);font-weight:700}
@@ -51,7 +51,7 @@ table{width:100%;border-collapse:separate;border-spacing:0;min-width:680px}
 thead th{padding:6px 8px;text-align:center;font-size:0.6em;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
 thead th:first-child,thead th:nth-child(2),thead th:nth-child(3){text-align:right}
 thead th.sorted{color:var(--accent)}
-thead th .ar{display:inline-block;margin-right:2px;font-size:0.8em;opacity:0.2}
+thead th .ar{display:inline-block;margin-right:2px;font-size:0.75em;opacity:0.2}
 thead th.sorted .ar{opacity:1}
 tbody tr:hover{background:rgba(88,166,255,0.03)}
 tbody td{padding:7px 8px;font-size:0.8em;border-bottom:1px solid rgba(48,54,61,0.3);vertical-align:middle;text-align:center}
@@ -59,22 +59,22 @@ tbody td:first-child,tbody td:nth-child(2),tbody td:nth-child(3){text-align:righ
 .rk{width:22px;font-weight:800;font-size:0.7em;color:var(--muted);opacity:0.35}
 .rk.g1{color:var(--yellow);opacity:1}
 .rk.g2{opacity:0.7}
-.rk.g3{color:var(--salam);opacity:0.6}
+.rk.g3{color:var(--c-salam);opacity:0.6}
 .pc{font-weight:700;font-size:0.84em;white-space:nowrap}
-.pc.stc{color:var(--purple)}.pc.mobily{color:var(--mobily)}.pc.zain{color:var(--zain)}.pc.salam{color:var(--salam)}.pc.go{color:var(--go)}
+.pc.stc{color:var(--purple)}.pc.mobily{color:var(--c-mobily)}.pc.zain{color:var(--c-zain)}.pc.salam{color:var(--c-salam)}.pc.go{color:var(--c-go)}
 .spd{white-space:nowrap;font-weight:700;font-size:0.88em}
 .spd .dn{color:var(--green)}
 .spd .up{color:var(--muted);font-size:0.9em}
 .prc{white-space:nowrap;text-align:center}
 .prc .mn{font-weight:800;color:var(--green);font-size:0.9em}
-.prc .pp{display:inline-block;background:rgba(86,211,100,0.1);color:var(--salam);padding:1px 5px;border-radius:3px;font-size:0.9em;font-weight:700}
+.prc .pp{display:inline-block;background:rgba(86,211,100,0.1);color:var(--c-salam);padding:1px 5px;border-radius:3px;font-size:0.9em;font-weight:700}
 .prc .pm{font-size:0.64em;color:var(--green);font-weight:600;margin-top:1px}
 .prc .pl{font-size:0.64em;color:var(--muted);margin-top:1px}
 .prc .eff{font-size:0.62em;color:var(--yellow);margin-top:1px;font-weight:600}
 .ttl{white-space:nowrap;opacity:0.45}
 tr:hover .ttl{opacity:0.85}
 .ttl .tp{font-weight:700;color:var(--yellow);font-size:0.8em}
-.nt{font-size:0.66em;color:var(--muted);max-width:150px;opacity:0.4}
+.nt{font-size:0.66em;color:var(--muted);max-width:160px;opacity:0.4}
 tr:hover .nt{opacity:0.7}
 .lk{color:var(--accent);text-decoration:none;font-size:0.68em;padding:2px 6px;border:1px solid var(--accent);border-radius:4px;transition:.15s;white-space:nowrap;display:inline-block;opacity:0.5}
 .lk:hover{opacity:1;background:var(--accent);color:var(--bg)}
@@ -87,14 +87,17 @@ tr:hover .lk{opacity:0.8}
 .ov.open{display:flex}
 .md{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:18px;max-width:460px;width:92%;max-height:80vh;overflow-y:auto}
 .md h2{font-size:0.95em;margin-bottom:8px}
-.md .x{float:left;background:none;border:none;color:var(--muted);font-size:1.1em;cursor:pointer;opacity:0.5}
+.md .x{float:left;background:none;border:none;color:var(--muted);font-size:1.1em;cursor:pointer;opacity:0.5;line-height:1}
 .md .x:hover{opacity:1;color:var(--text)}
-.le{padding:7px 0;border-bottom:1px solid var(--border)}
+.le{padding:8px 0;border-bottom:1px solid var(--border)}
 .le:last-child{border-bottom:none}
-.ld{font-size:0.62em;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:4px}
-.ld .dt{width:5px;height:5px;border-radius:50%;display:inline-block}
-.ld .dt.e{background:red}.ld .dt.c{background:green}.ld .dt.o{background:var(--surface2)}
-.lb{font-size:0.74em;line-height:1.5;opacity:0.75}
+.ld{font-size:0.68em;display:flex;align-items:center;gap:5px;margin-bottom:3px}
+.ld .dt{width:5px;height:5px;border-radius:50%;display:inline-block;flex-shrink:0}
+.ld .dt.e{background:var(--red)}.ld .dt.c{background:var(--green)}.ld .dt.o{background:var(--surface2)}
+.ld .dd{color:var(--muted)}
+.ld .ds{font-weight:700;margin-right:auto}
+.ld .ds.ok{color:var(--muted)}.ld .ds.chg{color:var(--green)}.ld .ds.err{color:var(--red)}
+.lb{font-size:0.76em;line-height:1.6;color:var(--text);opacity:0.75}
 @media(max-width:600px){.hd h1{font-size:1.05em}.cr{gap:5px}.sg{min-width:110px}.tw{padding:0 6px 12px}}
 </style>
 </head>
@@ -130,12 +133,11 @@ tr:hover .lk{opacity:0.8}
   </div>
   <div class="cr">
     <div class="sb-b">
-      <button class="sb active" data-k="eff" data-d="asc">الفعلي ↑</button>
-      <button class="sb" data-k="eff" data-d="desc">الفعلي ↓</button>
-      <button class="sb" data-k="price" data-d="asc">الشهري ↑</button>
-      <button class="sb" data-k="down" data-d="desc">التحميل ↓</button>
-      <button class="sb" data-k="up" data-d="desc">الرفع ↓</button>
-      <button class="sb" data-k="total" data-d="asc">المجموع ↑</button>
+      <button class="sb active" data-k="eff" data-d="asc">الفعلي ?</button>
+      <button class="sb" data-k="price" data-d="asc">الشهري ?</button>
+      <button class="sb" data-k="down" data-d="desc">التحميل ?</button>
+      <button class="sb" data-k="up" data-d="desc">الرفع ?</button>
+      <button class="sb" data-k="total" data-d="asc">المجموع ?</button>
     </div>
     <div class="rc" id="rc"></div>
   </div>
@@ -164,22 +166,24 @@ tr:hover .lk{opacity:0.8}
   <div class="md" onclick="event.stopPropagation()">
     <button class="x" onclick="closeLog()">&#x2715;</button>
     <h2>سجل التحديثات</h2>
-    <div id="lentries"></div>
+    <div id="entries"></div>
   </div>
 </div>
 
 <script>
 const P=[
+  // Go
   {p:"Go",n:"100",d:100,u:25,pr:189,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_100_D_N"},
   {p:"Go",n:"200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_200_D_N"},
-  {p:"Go",n:"300",d:300,u:75,pr:230,po:null,pm:null,na:null,pr2:"12 شهر",l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST300_12M"},
+  {p:"Go",n:"300",d:300,u:75,pr:230,po:null,pm:null,na:null,pr2:"عقد ١٢ شهر",l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST300_12M"},
   {p:"Go",n:"500",d:500,u:125,pr:389,po:null,pm:null,na:null,l:"https://www.go.com.sa/%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D9%88%D8%AA%D8%B1%D8%A9/FTTH_POST_500_API_D"},
-  {p:"Zain",n:"Basic 100",d:100,u:25,pr:199,po:null,pm:null,na:null,pr2:"+١١٥ تأسيس",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Home 200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Plus 300",d:300,u:100,pr:289,po:null,pm:null,na:null,pr2:"اونلاين",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Gaming 300",d:300,u:100,pr:299,po:null,pm:null,na:null,pr2:"اونلاين + ٥٠ قسيمة",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Premium 500",d:500,u:200,pr:399,po:null,pm:null,na:null,l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
-  {p:"Zain",n:"Black 1G",d:1000,u:300,pr:999,po:null,pm:null,na:null,pr2:"اونلاين + Netflix, Disney+, Shahid, OSN",l:"https://shop.sa.zain.com/en/home-plans/fiber/postpaid-ftth"},
+  // Zain (updated prices from sa.zain.com)
+  {p:"Zain",n:"Basic 100",d:100,u:25,pr:199,po:null,pm:null,na:null,pr2:"+١١٥ تأسيس",l:"https://sa.zain.com/en/home/fiber-home/fiber-home-basic-plus"},
+  {p:"Zain",n:"Home 200",d:200,u:50,pr:239,po:null,pm:null,na:null,l:"https://sa.zain.com/en/home/fiber-home/fiber-home-basic-plus"},
+  {p:"Zain",n:"Plus 300",d:300,u:100,pr:279,po:null,pm:null,na:null,pr2:"اونلاين — ٢ اشتراك",l:"https://sa.zain.com/en/home/fiber-home/fiber-home-basic-plus"},
+  {p:"Zain",n:"Premium 500",d:500,u:200,pr:389,po:null,pm:null,na:null,pr2:"اونلاين — ٢ اشتراك",l:"https://sa.zain.com/en/home/fiber-home/fiber-home-basic-plus"},
+  {p:"Zain",n:"Black 1G",d:1000,u:300,pr:949,po:null,pm:null,na:null,pr2:"اونلاين — ٤ اشتراكات",l:"https://sa.zain.com/en/home/fiber-home/fiber-home-basic-plus"},
+  // Mobily
   {p:"Mobily",n:"200",d:200,u:50,pr:230,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-200"},
   {p:"Mobily",n:"300",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-300"},
   {p:"Mobily",n:"400",d:400,u:150,pr:345,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-400"},
@@ -189,6 +193,7 @@ const P=[
   {p:"Mobily",n:"FTTR 500",d:500,u:200,pr:460,po:null,pm:null,na:null,pr2:"راوتر شبكي",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr500"},
   {p:"Mobily",n:"1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/fiber-postpaid-1gb"},
   {p:"Mobily",n:"FTTR 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pr2:"راوتر شبكي",l:"https://www.mobily.com.sa/web/en/personal/home/fiber-postpaid/mobily-home-fttr1gbps"},
+  // STC
   {p:"STC",n:"بيسك 300",d:300,u:100,pr:287.5,po:null,pm:null,na:null,l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
   {p:"STC",n:"ستريم لايت 500",d:500,u:125,pr:345,po:null,pm:null,na:null,l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
   {p:"STC",n:"ستريم 500",d:500,u:125,pr:402.5,po:null,pm:null,na:null,pr2:"stc TV + ١ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
@@ -197,21 +202,15 @@ const P=[
   {p:"STC",n:"ستريم برو 500",d:500,u:125,pr:575,po:null,pm:null,na:null,pr2:"stc TV + ١ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
   {p:"STC",n:"انترتينمنت برو 500",d:500,u:200,pr:690,po:null,pm:null,na:null,pr2:"stc TV + ٢ اشتراك",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
   {p:"STC",n:"ماكس 1G",d:1000,u:300,pr:920,po:null,pm:null,na:null,pr2:"stc TV + ٤ اشتراكات",l:"https://www.stc.com.sa/content/stc-public-store/sa/ar/public-store-landing-page/baity-packages.html"},
+  // Salam
   {p:"Salam",n:"300",d:300,u:100,pr:290,po:174,pm:3,na:290,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
   {p:"Salam",n:"500",d:500,u:125,pr:360,po:216,pm:3,na:360,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
   {p:"Salam",n:"1000",d:1000,u:300,pr:1000,po:300,pm:2,na:1000,l:"https://salam.sa/ar/consumer/home/salam-fiber/fiber-postpaid/"},
 ];
 P.forEach(o=>{o._e=(o.po&&o.pm&&o.na!=null)?(o.po*o.pm+o.na*(12-o.pm))/12:o.pr;o._t=o._e*12});
 
-const LOG=[
-  {d:"٣٠ مايو",s:"e",e:["فشل - خطا API"]},
-  {d:"٢٩ مايو",s:"o",e:["لا تغيير"]},
-  {d:"٢٨ مايو",s:"o",e:["لا تغيير"]},
-  {d:"٢٧ مايو",s:"c",e:["اول فحص"]},
-];
-
-const S=JSON.parse(localStorage.getItem('sfp3')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,sk:'eff',sd:'asc'};
-function save(){localStorage.setItem('sfp3',JSON.stringify(S))}
+const S=JSON.parse(localStorage.getItem('sfp4')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,sk:'eff',sd:'asc'};
+function save(){localStorage.setItem('sfp4',JSON.stringify(S))}
 
 function filt(){return P.filter(o=>{
   if(S.pv!='all'&&o.p!==S.pv)return false;
@@ -262,12 +261,25 @@ function render(){
   }).join('');
   updSort();
 }
+
+// FIXED: only reset arrows on th that have .ar, safely
 function updSort(){
-  document.querySelectorAll('thead th').forEach(t=>{t.classList.remove('sorted');t.querySelector('.ar').textContent='\u21C5';t.querySelector('.ar').style.opacity='0.2'});
+  document.querySelectorAll('thead th').forEach(t=>{
+    t.classList.remove('sorted');
+    const ar=t.querySelector('.ar');
+    if(ar){ar.textContent='\u21C5';ar.style.opacity='0.2'}
+  });
   const th=document.querySelector(`thead th[data-k="${S.sk}"]`);
-  if(th){th.classList.add('sorted');th.querySelector('.ar').textContent=S.sd==='asc'?'\u2191':'\u2193';th.querySelector('.ar').style.opacity='1'}
+  if(th){
+    th.classList.add('sorted');
+    const ar=th.querySelector('.ar');
+    if(ar){ar.textContent=S.sd==='asc'?'\u2191':'\u2193';ar.style.opacity='1'}
+  }
+  // update sort buttons to match
+  document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===S.sk));
 }
 
+// event bindings
 document.querySelectorAll('.ptg').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.ptg').forEach(x=>x.classList.remove('active'));b.classList.add('active');S.pv=b.dataset.p;save();render();
 }));
@@ -280,18 +292,29 @@ document.getElementById('dmin').addEventListener('input',e=>{S.dmin=+e.target.va
 document.getElementById('umin').value=S.umin;
 document.getElementById('umin').addEventListener('input',e=>{S.umin=+e.target.value;document.getElementById('uv').textContent=S.umin;save();render()});
 document.querySelectorAll('.sb').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.sb').forEach(x=>x.classList.remove('active'));b.classList.add('active');S.sk=b.dataset.k;S.sd=b.dataset.d;save();render();
+  if(S.sk===b.dataset.k){S.sd=S.sd==='asc'?'desc':'asc'}else{S.sk=b.dataset.k;S.sd=b.dataset.d||'asc'}
+  save();render();
 }));
 document.querySelectorAll('thead th[data-k]').forEach(th=>th.addEventListener('click',()=>{
   const k=th.dataset.k;
   if(S.sk===k){S.sd=S.sd==='asc'?'desc':'asc'}else{S.sk=k;S.sd='asc'}
-  document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===k&&b.dataset.d===S.sd));
   save();render();
 }));
 function openLog(){
-  document.getElementById('lentries').innerHTML=LOG.map(l=>{
-    const dc=l.s==='e'?'e':l.s==='c'?'c':'o';
-    return `<div class="le"><div class="ld"><span class="dt ${dc}"></span>${l.d}</div><div class="lb">${l.e.map(x=>'&bull; '+x).join('<br>')}</div></div>`;
+  const d=new Date().toLocaleDateString('ar-SA',{timeZone:'Asia/Riyadh',year:'numeric',month:'short',day:'numeric'});
+  const today=d;
+  // changelog entries with dates
+  const entries=[
+    {date:today,status:'ok',text:'فحص يومي — لا تغيير'},
+    {date:'٣٠ مايو',status:'chg',text:'تحديث اسعار Zain — خصومات جديدة'},
+    {date:'٢٩ مايو',status:'ok',text:'فحص يومي — لا تغيير'},
+    {date:'٢٨ مايو',status:'ok',text:'فحص يومي — لا تغيير'},
+    {date:'٢٧ مايو',status:'first',text:'اول فحص — خط اساس'},
+  ];
+  document.getElementById('entries').innerHTML=entries.map(e=>{
+    const sc=e.status==='ok'?'ok':e.status==='chg'?'chg':'ok';
+    const sl=e.status==='ok'?'لا تغيير':e.status==='chg'?'تم التحديث':'خط اساس';
+    return `<div class="le"><div class="ld"><span class="dt ${sc}"></span><span class="dd">${e.date}</span><span class="ds ${sc}">${sl}</span></div><div class="lb">&#x2022; ${e.text}</div></div>`;
   }).join('');
   document.getElementById('lov').classList.add('open');
 }
@@ -299,13 +322,14 @@ function closeLog(e){
   if(!e||e.target===document.getElementById('lov')||e.target.classList.contains('x'))document.getElementById('lov').classList.remove('open');
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLog()});
+
 (()=>{
   document.querySelectorAll('.ptg').forEach(b=>b.classList.toggle('active',b.dataset.p===S.pv));
   document.getElementById('srch').value=S.sr;
   document.getElementById('pmax').value=S.pmax;document.getElementById('pv').textContent=S.pmax;
   document.getElementById('dmin').value=S.dmin;document.getElementById('dv').textContent=S.dmin;
   document.getElementById('umin').value=S.umin;document.getElementById('uv').textContent=S.umin;
-  document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===S.sk&&b.dataset.d===S.sd));
+  document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===S.sk));
   render();
 })();
 </script>
