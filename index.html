@@ -280,19 +280,22 @@ document.querySelectorAll('thead th[data-k]').forEach(th=>th.addEventListener('c
   save();render();
 }));
 function openLog(){
-  const entries=[
-    {d:new Date().toLocaleDateString('ar-SA',{timeZone:'Asia/Riyadh',year:'numeric',month:'short',day:'numeric'}),s:'ok',t:'فحص يومي — لا تغيير'},
-    {d:'٣٠ مايو',s:'chg',t:'تحديث اسعار Zain + تفاصيل الباقات'},
-    {d:'٢٩ مايو',s:'ok',t:'فحص يومي — لا تغيير'},
-    {d:'٢٨ مايو',s:'ok',t:'فحص يومي — لا تغيير'},
-    {d:'٢٧ مايو',s:'c',t:'اول فحص — خط اساس'},
-  ];
-  document.getElementById('entries').innerHTML=entries.map(e=>{
-    const sc=e.s==='ok'?'o':e.s==='chg'?'c':'o';
-    const sl=e.s==='ok'?'لا تغيير':e.s==='chg'?'تم التحديث':'خط اساس';
-    return `<div class="le"><div class="ld"><span class="dt ${sc}"></span><span class="dd">${e.d}</span><span class="ds ${sc}">${sl}</span></div><div class="lb">&bull; ${e.t}</div></div>`;
-  }).join('');
-  document.getElementById('lov').classList.add('open');
+  fetch('data.json')
+    .then(r=>r.json())
+    .then(data=>{
+      const entries=(data.log||[]).slice().reverse();
+      document.getElementById('entries').innerHTML=entries.map(e=>{
+        const sc=e.s==='ok'?'o':e.s==='chg'?'c':e.s==='err'?'e':'o';
+        const sl=e.s==='ok'?'لا تغيير':e.s==='chg'?'تم التحديث':e.s==='err'?'خطأ':'خط اساس';
+        const det=e.details?`<br>&bull; ${e.details}`:'';
+        return `<div class="le"><div class="ld"><span class="dt ${sc}"></span><span class="dd">${e.date}</span><span class="ds ${sc}">${sl}</span></div><div class="lb">&bull; ${e.summary}${det}</div></div>`;
+      }).join('');
+      document.getElementById('lov').classList.add('open');
+    })
+    .catch(()=>{
+      document.getElementById('entries').innerHTML='<div class="le"><div class="ld"><span class="dt o"></span><span class="dd">--</span></div><div class="lb">لا توجد بيانات</div></div>';
+      document.getElementById('lov').classList.add('open');
+    });
 }
 function closeLog(e){
   if(!e||e.target===document.getElementById('lov')||e.target.classList.contains('x'))document.getElementById('lov').classList.remove('open');
