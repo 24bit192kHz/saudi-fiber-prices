@@ -66,6 +66,10 @@ tbody td:first-child,tbody td:nth-child(2),tbody td:nth-child(3){text-align:righ
 .prc .pm{font-size:0.62em;color:var(--grn);font-weight:600;margin-top:1px}
 .prc .pl{font-size:0.62em;color:var(--mut);margin-top:1px}
 .prc .eff{font-size:0.6em;color:var(--ylw);margin-top:1px;font-weight:600}
+/* under-budget highlight */
+tr.under td{background:rgba(63,185,80,0.06)}
+tr.under .rk{color:var(--grn);opacity:0.7}
+.badge-budget{display:inline-block;padding:1px 5px;border-radius:3px;font-size:0.55em;font-weight:700;background:rgba(63,185,80,0.15);color:var(--grn);margin-right:3px;vertical-align:middle}
 .ttl{white-space:nowrap;opacity:0.4}
 tr:hover .ttl{opacity:0.8}
 .ttl .tp{font-weight:700;color:var(--ylw);font-size:0.78em}
@@ -125,6 +129,7 @@ tr:hover .lk{opacity:0.75}
     <div class="sg"><label for="pmax">السعر حتى: <span class="rv" id="pv">1000</span> ريال</label><input type="range" id="pmax" min="0" max="1000" value="1000" step="10"></div>
     <div class="sg"><label for="dmin">التحميل من: <span class="rv" id="dv">0</span></label><input type="range" id="dmin" min="0" max="1000" value="0" step="25"></div>
     <div class="sg"><label for="umin">الرفع من: <span class="rv" id="uv">0</span></label><input type="range" id="umin" min="0" max="300" value="0" step="25"></div>
+    <div class="sg"><label for="budget">ميزانيتك: <span class="rv" id="bv">316</span> ريال</label><input type="range" id="budget" min="100" max="500" value="316" step="5"></div>
   </div>
   <div class="cr">
     <div class="sb-b">
@@ -204,7 +209,7 @@ const P=[
 ];
 P.forEach(o=>{o._e=(o.po&&o.pm&&o.na!=null)?(o.po*o.pm+o.na*(12-o.pm))/12:o.pr;o._t=o._e*12});
 
-const S=JSON.parse(localStorage.getItem('sfp5')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,sk:'eff',sd:'asc'};
+const S=JSON.parse(localStorage.getItem('sfp5')||'null')||{pv:'all',sr:'',pmax:1000,dmin:0,umin:0,budget:316,sk:'eff',sd:'asc'};
 function save(){localStorage.setItem('sfp5',JSON.stringify(S))}
 function filt(){return P.filter(o=>{
   if(S.pv!='all'&&o.p!==S.pv)return false;
@@ -239,10 +244,12 @@ function render(){
     }else{
       ph=`<div class="mn">${fp(o.pr)}</div>`;
     }
-    return `<tr>
+    const under=o._e<=S.budget;
+    const badge=under?'<span class="badge-budget">ضمن الميزانية</span>':'';
+    return `<tr class="${under?'under':''}">
       <td class="rk ${rk}">${i+1}</td>
       <td><span class="pc ${o.p.toLowerCase()}">${o.p}</span></td>
-      <td>${o.n}</td>
+      <td>${badge}${o.n}</td>
       <td class="spd"><span class="dn">${fs(o.d)}</span>/<span class="up">${fs(o.u)}</span></td>
       <td class="prc">${ph}</td>
       <td class="prc"><div class="mn">${fp(o._e)}</div>${hp?`<div class="eff">${fp(o._e)}/شهر</div>`:''}</td>
@@ -270,6 +277,8 @@ document.getElementById('dmin').value=S.dmin;
 document.getElementById('dmin').addEventListener('input',e=>{S.dmin=+e.target.value;document.getElementById('dv').textContent=S.dmin;save();render()});
 document.getElementById('umin').value=S.umin;
 document.getElementById('umin').addEventListener('input',e=>{S.umin=+e.target.value;document.getElementById('uv').textContent=S.umin;save();render()});
+document.getElementById('budget').value=S.budget;
+document.getElementById('budget').addEventListener('input',e=>{S.budget=+e.target.value;document.getElementById('bv').textContent=S.budget;save();render()});
 document.querySelectorAll('.sb').forEach(b=>b.addEventListener('click',()=>{
   if(S.sk===b.dataset.k){S.sd=S.sd==='asc'?'desc':'asc'}else{S.sk=b.dataset.k;S.sd=b.dataset.d||'asc'}
   save();render();
@@ -307,6 +316,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLog()});
   document.getElementById('pmax').value=S.pmax;document.getElementById('pv').textContent=S.pmax;
   document.getElementById('dmin').value=S.dmin;document.getElementById('dv').textContent=S.dmin;
   document.getElementById('umin').value=S.umin;document.getElementById('uv').textContent=S.umin;
+  document.getElementById('budget').value=S.budget;document.getElementById('bv').textContent=S.budget;
   document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('active',b.dataset.k===S.sk));
   render();
 })();
