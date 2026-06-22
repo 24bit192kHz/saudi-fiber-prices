@@ -1,5 +1,5 @@
 {
-  "last_check": "12 June 2026",
+  "last_check": "22 June 2026",
   "budget_limit": 316.25,
   "log": [
     {
@@ -47,6 +47,30 @@
     },
     {
       "date": "12 June 2026",
+      "s": "chg",
+      "summary": "تحديث اسعار",
+      "details": ""
+    },
+    {
+      "date": "15 June 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا توجد باقة 500ميجا بالسعر العادي تحت 316.25 ريال",
+      "details": "STC ستريم لايت 345, STC ستريم برو 575, STC انترتيمنت برو 690, Mobily 500 402.5, Zain Premium 389, Go 500 389, Salam 500 360"
+    },
+    {
+      "date": "17 يونيو 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير (تعثر Go بسبب خطأ في المتصفح)",
+      "details": "STC/Mobily/Zain/Salam scraped OK. Go 200 failed (net::ERR_ABORTED), browser closed. No price changes detected."
+    },
+    {
+      "date": "21 June 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": "تم تحديث البيانات الأساسية - لا تغيير في الأسعار"
+    },
+    {
+      "date": "22 June 2026",
       "s": "chg",
       "summary": "تحديث اسعار",
       "details": ""
