@@ -3,11 +3,6 @@
   "budget_limit": 316.25,
   "log": [
     {
-      "date": "٢٧ مايو",
-      "s": "first",
-      "summary": "خط اساس"
-    },
-    {
       "date": "٢٨ مايو",
       "s": "ok",
       "summary": "لا تغيير"
@@ -107,6 +102,12 @@
     },
     {
       "date": "28 June 2026",
+      "s": "chg",
+      "summary": "تحديث اسعار",
+      "details": ""
+    },
+    {
+      "date": "29 June 2026",
       "s": "chg",
       "summary": "تحديث اسعار",
       "details": ""
