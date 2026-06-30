@@ -3,12 +3,6 @@
   "budget_limit": 316.25,
   "log": [
     {
-      "date": "٤-٨ يونيو",
-      "s": "err",
-      "summary": "تعطل المتصفح",
-      "details": "تم اصلاح السكريبت"
-    },
-    {
       "date": "٨ يونيو",
       "s": "update",
       "summary": "تحديث اسعار Zain + STC promos",
@@ -120,6 +114,12 @@
       "s": "chg",
       "summary": "تحديث اسعار",
       "details": "['تغيير: mobily_500_200 402.5 -> 460.0 (Mobily)', 'جديد: zain_100_25 = 199.0 (Zain)', 'جديد: zain_200_50 = 239.0 (Zain)']"
+    },
+    {
+      "date": "30 June 2026",
+      "s": "chg",
+      "summary": "تحديث اسعار",
+      "details": ""
     }
   ]
 }
