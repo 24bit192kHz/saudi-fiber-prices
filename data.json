@@ -3,12 +3,6 @@
   "budget_limit": 316.25,
   "log": [
     {
-      "date": "17 يونيو 2026",
-      "s": "ok",
-      "summary": "فحص يومي — لا تغيير (تعثر Go بسبب خطأ في المتصفح)",
-      "details": "STC/Mobily/Zain/Salam scraped OK. Go 200 failed (net::ERR_ABORTED), browser closed. No price changes detected."
-    },
-    {
       "date": "21 June 2026",
       "s": "ok",
       "summary": "فحص يومي — لا تغيير",
@@ -112,6 +106,12 @@
       "date": "03 July 2026",
       "s": "ok",
       "summary": "فحص يومي — لا تغيير"
+    },
+    {
+      "date": "03 July 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": ""
     },
     {
       "date": "03 July 2026",
