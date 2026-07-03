@@ -3,12 +3,6 @@
   "budget_limit": 316.25,
   "log": [
     {
-      "date": "22 June 2026",
-      "s": "ok",
-      "summary": "فحص يومي — لا تغيير (تم إصلاح السكريبت)",
-      "details": "تم إصلاح: NODE_PATH, PLAYWRIGHT_BROWSERS_PATH, Zain/Salam/Go parsing, baseline محدثة. جميع الشركات 5 تعمل."
-    },
-    {
       "date": "23 June 2026",
       "s": "chg",
       "summary": "تحديث اسعار",
@@ -100,6 +94,12 @@
       "date": "03 July 2026",
       "s": "ok",
       "summary": "فحص يومي — لا تغيير"
+    },
+    {
+      "date": "03 July 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": ""
     },
     {
       "date": "03 July 2026",
