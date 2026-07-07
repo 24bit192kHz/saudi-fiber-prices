@@ -1,13 +1,7 @@
 {
-  "last_check": "06 July 2026",
+  "last_check": "07 July 2026",
   "budget_limit": 316.25,
   "log": [
-    {
-      "date": "26 June 2026",
-      "s": "chg",
-      "summary": "تحديث اسعار",
-      "details": ""
-    },
     {
       "date": "27 June 2026",
       "s": "chg",
@@ -115,6 +109,12 @@
     },
     {
       "date": "06 July 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": ""
+    },
+    {
+      "date": "07 July 2026",
       "s": "ok",
       "summary": "فحص يومي — لا تغيير",
       "details": ""
