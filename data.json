@@ -1,13 +1,7 @@
 {
-  "last_check": "15 July 2026",
+  "last_check": "16 July 2026",
   "budget_limit": 316.25,
   "log": [
-    {
-      "date": "30 June 2026",
-      "s": "chg",
-      "summary": "تحديث اسعار",
-      "details": "['جديد: zain_100_25 = 199.0 (Zain)', 'جديد: zain_200_50 = 239.0 (Zain)', 'جديد: zain_300_100 = 279.0 (Zain)']"
-    },
     {
       "date": "01 July 2026",
       "s": "ok",
@@ -118,6 +112,12 @@
       "s": "chg",
       "summary": "تحديث اسعار",
       "details": "['تغيير: mobily_300_100 287.5 -> 172.5 (Mobily)']"
+    },
+    {
+      "date": "16 July 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": ""
     }
   ]
 }
