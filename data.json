@@ -1,12 +1,7 @@
 {
-  "last_check": "17 July 2026",
+  "last_check": "18 July 2026",
   "budget_limit": 316.25,
   "log": [
-    {
-      "date": "02 July 2026",
-      "s": "ok",
-      "summary": "فحص يومي — لا تغيير"
-    },
     {
       "date": "03 July 2026",
       "s": "ok",
@@ -116,6 +111,12 @@
     },
     {
       "date": "17 July 2026",
+      "s": "ok",
+      "summary": "فحص يومي — لا تغيير",
+      "details": ""
+    },
+    {
+      "date": "18 July 2026",
       "s": "ok",
       "summary": "فحص يومي — لا تغيير",
       "details": ""
